@@ -4,15 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+
+    <Button
+        android:id="@+id/findByFacultuBtn"
+        android:layout_width="153dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorButton"
+        android:drawableTop="@drawable/ic_launcher_foreground"
+        android:gravity="center"
+        android:text="@string/find_by_faculty"
+        android:textColor="@color/colorText"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/findByNameBtn"
+        app:layout_constraintVertical_bias="0.367" />
+
+    <Button
+        android:id="@+id/findByNameBtn"
+        android:layout_width="155dp"
+        android:layout_height="150dp"
+        android:background="@color/colorButton"
+        android:drawableTop="@drawable/ic_launcher_foreground"
+        android:text="@string/find_by_name"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.302"
+        android:gravity="center" />
 
 </android.support.constraint.ConstraintLayout>
