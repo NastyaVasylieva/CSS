@@ -9,9 +9,9 @@
 
 
     <Button
-        android:id="@+id/findByFacultuBtn"
-        android:layout_width="153dp"
-        android:layout_height="149dp"
+        android:id="@+id/findByFacultyBtn"
+        android:layout_width="261dp"
+        android:layout_height="164dp"
         android:layout_marginTop="8dp"
         android:background="@color/colorButton"
         android:drawableTop="@drawable/ic_launcher_foreground"
@@ -27,18 +27,17 @@
 
     <Button
         android:id="@+id/findByNameBtn"
-        android:layout_width="155dp"
-        android:layout_height="150dp"
+        android:layout_width="260dp"
+        android:layout_height="174dp"
         android:background="@color/colorButton"
         android:drawableTop="@drawable/ic_launcher_foreground"
+        android:gravity="center"
         android:text="@string/find_by_name"
         android:textColor="@color/colorText"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.302"
-        android:gravity="center" />
+        app:layout_constraintVertical_bias="0.226" />
 
 </android.support.constraint.ConstraintLayout>
