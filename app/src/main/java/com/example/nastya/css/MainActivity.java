@@ -15,14 +15,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         findByName = (Button) findViewById(R.id.findByNameBtn);
-        findByFaculty = (Button) findViewById(R.id.findByFacultuBtn);
+        findByFaculty = (Button) findViewById(R.id.findByFacultyBtn);
 
         findByName.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, SearchByNameActivity.class);
                 startActivity(intent);
-
 
             }
         });
@@ -35,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
 
     }
 }
