@@ -1,7 +1,4 @@
 package domain;
-/*import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-//import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
-*/
 
 public class Person {
     public enum Gender {
@@ -9,8 +6,8 @@ public class Person {
     }
 
     private int id;
-    private String firstName;
-    private String lastName;
+    public String firstName;
+    public String lastName;
     private Gender gender;
 
     public Person() {
@@ -44,5 +41,21 @@ public class Person {
 
     public String getLastName() {
         return lastName;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
     }
 }
