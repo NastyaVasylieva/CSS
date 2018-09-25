@@ -1,12 +1,11 @@
 package domain;
 
-public class Professor extends Person {
+public class User extends Person {
 
     abstract static class Speciality {
         enum IKNI {
             PZ, SA, KN, PL
         }
-
         ;
 
         enum IKTA {
@@ -17,7 +16,7 @@ public class Professor extends Person {
     private String image;
     private String info;
 
-    public Professor() {
+    public User() {
     }
 
     public String getImage() {
@@ -37,13 +36,13 @@ public class Professor extends Person {
     }
 
 
-    public Professor(String firstName, String lastName, Person.Gender gender, String image, String info) {
+    public User(String firstName, String lastName, Person.Gender gender, String image, String info) {
         super(firstName, lastName, gender);
         this.image = image;
         this.info = info;
     }
 
-    public Professor(int id, String firstName, String lastName, Person.Gender gender, String image, String info) {
+    public User(int id, String firstName, String lastName, Person.Gender gender, String image, String info) {
         super(id, firstName, lastName, gender);
         this.image = image;
         this.info = info;
