@@ -31,55 +31,47 @@
 
     </android.support.v7.widget.Toolbar>
 
-    <ImageButton
-        android:id="@+id/search_button"
-        android:layout_width="45dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
-        android:layout_marginTop="64dp"
-        android:background="@color/colorPrimary"
-        android:paddingLeft="10dp"
+    <android.support.v7.widget.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="308dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="56dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_search_black_24dp" />
-
-
-    <EditText
-        android:id="@+id/search_field"
-        android:layout_width="264dp"
-        android:layout_height="40dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="64dp"
+        android:queryHint="Шукати тут..."
+        android:iconifiedByDefault="false"
         android:background="@drawable/search_layout"
-        android:ems="10"
-        android:hint="Шукай тут..."
-        android:inputType="textPersonName"
-        android:paddingBottom="10dp"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:paddingTop="10dp"
-        android:textAllCaps="false"
-        android:textColor="@color/colorText"
-        android:textColorHint="@color/colorText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.241"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/result_list"
+        />
+
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="214dp"
-        android:layout_marginTop="124dp"
-        android:paddingTop="50dp"
+        android:layout_height="460dp"
+        android:layout_marginTop="104dp"
+        android:paddingBottom="40dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></android.support.v7.widget.RecyclerView>
+        app:layout_constraintTop_toTopOf="@+id/toolbar">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/result_list"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.456"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </ScrollView>
 
 
 </android.support.constraint.ConstraintLayout>

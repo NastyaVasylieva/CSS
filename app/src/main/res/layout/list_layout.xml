@@ -5,13 +5,13 @@
 
     <TextView
         android:id="@+id/name_view"
-        android:layout_width="305dp"
+        android:layout_width="match_parent"
         android:layout_height="29dp"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="43dp"
+        android:layout_marginLeft="0dp"
         android:layout_marginTop="22dp"
+        android:drawable="@drawable/divider_line"
         android:text="Прізвище Ім'я"
-        android:textSize="24dp"
-        android:textColor="@color/colorText" />
+        android:textColor="@color/colorText"
+        android:textSize="20dp" />
 </RelativeLayout>
