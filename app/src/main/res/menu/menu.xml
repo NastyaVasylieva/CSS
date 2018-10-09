@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:icon="@drawable/ic_more_vert_black_24dp">
+
+    <item
+        android:id="@+id/menu_auth"
+        android:orderInCategory="100"
+        android:title="Увійти в систему" />
+    <item
+        android:id="@+id/menu_settings"
+        android:orderInCategory="100"
+        android:title="Налаштування" />
+</menu>
