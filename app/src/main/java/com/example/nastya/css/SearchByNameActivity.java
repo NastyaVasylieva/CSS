@@ -8,6 +8,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -27,7 +29,6 @@ public class SearchByNameActivity extends AppCompatActivity {
     private RecyclerView mResultList;
     private DatabaseReference mUserDatabase;
     private SearchView mSearchField;
-
 
 
     @Override
@@ -61,6 +62,22 @@ public class SearchByNameActivity extends AppCompatActivity {
             }
         });
 
+        mToolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+
+                if (item.getItemId() == R.id.menu_auth) {
+                    Intent intent = new Intent(SearchByNameActivity.this, AuthActivity.class);
+                    startActivity(intent);
+                }
+
+                return false;
+            }
+        });
+
+        mToolbar.inflateMenu(R.menu.menu);
+
         mSearchField.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
@@ -85,6 +102,12 @@ public class SearchByNameActivity extends AppCompatActivity {
                return false;
            }
        });*/
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
     }
 
 

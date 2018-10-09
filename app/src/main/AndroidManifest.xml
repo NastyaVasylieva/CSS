@@ -25,6 +25,10 @@
             android:name=".SearchByFacultyActivity"
             android:noHistory="true"
             android:label="@string/find_by_faculty"></activity>
+        <activity
+            android:name=".AuthActivity"
+            android:noHistory="true"
+            android:label=""></activity>
     </application>
 
 </manifest>

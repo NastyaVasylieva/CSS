@@ -4,4 +4,10 @@
     <string name="find_by_faculty">Пошук по кафедрі</string>
     <string name="institute">Інститут</string>
     <string name="faculty">Кафедра</string>
+    <string name="auth">Авторизація</string>
+    <string name="username">Ім\'я користувача</string>
+    <string name="password">Пароль</string>
+    <string name="login">Авторизуватись</string>
+    <string name="signin">Увійти</string>
+
 </resources>
